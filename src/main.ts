@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.enableCors({
-    origin: 'https://frontend-lilac-sigma-92.vercel.app/',
+    origin: '*',
   });
 
   // enable validation globally
